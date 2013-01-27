@@ -39,6 +39,7 @@ public class SalariedEmployee extends Employee{
         //salary is calculated assuming 2 pay periods per month
         
         setSalaryRate(salary/24);
+        setGrossPay(salaryRate);
     }
     
     

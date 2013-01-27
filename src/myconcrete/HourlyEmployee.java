@@ -12,13 +12,13 @@ public class HourlyEmployee extends Employee {
 
     private double hoursWorked;
     private double hourlyRate;
-    private double totalPay;
+    
     
     public HourlyEmployee() {
         
         hoursWorked =0;
         hourlyRate =0;     
-        totalPay = 0;
+       
     }
 
     public double getHoursWorked() {
@@ -37,19 +37,14 @@ public class HourlyEmployee extends Employee {
         this.hourlyRate = hourlyRate;
     }
     
-    public void calcTotalPay(){
-        setTotalPay(hoursWorked*hourlyRate);
+    public void calcGrossPay(){
+        setGrossPay(hoursWorked*hourlyRate);
+        
     }
 
-    public double getTotalPay() {
-        return totalPay;
-    }
-
-    public void setTotalPay(double totalPay) {
-        this.totalPay = totalPay;
-    }
+ 
             
-    
+ 
     
     
     

@@ -24,7 +24,14 @@ public class SalaryPlusBonusEmployee extends SalariedEmployee {
         this.bonusAmt = bonusAmt;
     }
 
-
+    @Override
+    public void calcSalaryRate(){
+        //overrides the method in SalariedEmployee to allow the addidtion of 
+        //bonus pay
+        
+        setSalaryRate(getSalary()/24);
+        setGrossPay(getSalaryRate()+bonusAmt);
+    }
     
     
     
