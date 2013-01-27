@@ -11,9 +11,12 @@ package myconcrete;
 public class SalariedEmployee extends Employee{
 
     private double salary;
-    
+    private double salaryRate;
+        
     public SalariedEmployee() {
         salary = 0;
+        salaryRate = 0;
+        
     }
 
     public double getSalary() {
@@ -23,7 +26,20 @@ public class SalariedEmployee extends Employee{
     public void setSalary(double salary) {
         this.salary = salary;
     }
+
+    public double getSalaryRate() {
+        return salaryRate;
+    }
+
+    public void setSalaryRate(double salaryRate) {
+        this.salaryRate = salaryRate;
+    }
     
+    public void calcSalaryRate(){
+        //salary is calculated assuming 2 pay periods per month
+        
+        setSalaryRate(salary/24);
+    }
     
     
     
