@@ -12,7 +12,7 @@ public class SalariedEmployee extends Employee{
 
     private double salary;
     private double salaryRate;
-    private double grossPay; 
+    private double grossPay;
     
     public SalariedEmployee() {
         salary = 0;

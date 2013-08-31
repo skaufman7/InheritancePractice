@@ -41,7 +41,7 @@ public class HourlyEmployee extends Employee {
 
     
     public void calcGrossPay(){
-        setGrossPay(hoursWorked*hourlyRate);
+        grossPay=(hoursWorked*hourlyRate);
         
     }
 
